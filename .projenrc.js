@@ -18,6 +18,9 @@ const project = new AwsCdkConstructLibrary({
   projectType: ProjectType.LIB,
   cdkAssert: true,
   mergify: false,
+  releaseBranches: ['main'],
+  releaseToNpm: true,
+  releaseWorkflow: true,
 
   /* AwsCdkConstructLibraryOptions */
   // cdkAssert: true,                                                          /* Install the @aws-cdk/assert library? */
