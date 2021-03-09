@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/rogerchi/cdk-s3-bucketreplication/compare/v0.0.3...v0.0.4) (2021-03-09)
+
+
+### Bug Fixes
+
+* package name ([668fa7c](https://github.com/rogerchi/cdk-s3-bucketreplication/commit/668fa7cb4fed903ef55832f5adbdd34a6fca5ad3))
+
 ### [0.0.3](https://github.com/rogerchi/cdk-s3-bucketreplication/compare/v0.0.2...v0.0.3) (2021-03-09)
 
 
