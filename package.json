@@ -1,5 +1,5 @@
 {
-  "name": "@rogerchi/cdk-s3-bucketreplication",
+  "name": "cdk-s3-bucketreplication",
   "repository": {
     "type": "git",
     "url": "https://github.com/rogerchi/cdk-s3-bucketreplication.git"
