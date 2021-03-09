@@ -1,6 +1,6 @@
 const { AwsCdkConstructLibrary, ProjectType } = require('projen');
 
-const PROJECT_NAME = '@rogerchi/cdk-s3-bucketreplication';
+const PROJECT_NAME = 'cdk-s3-bucketreplication';
 
 const project = new AwsCdkConstructLibrary({
   author: 'Roger Chi',
@@ -21,6 +21,7 @@ const project = new AwsCdkConstructLibrary({
   releaseBranches: ['main'],
   releaseToNpm: true,
   releaseWorkflow: true,
+  packageName: `@rogerchi/${PROJECT_NAME}`,
 
   /* AwsCdkConstructLibraryOptions */
   // cdkAssert: true,                                                          /* Install the @aws-cdk/assert library? */
