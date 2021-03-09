@@ -1,5 +1,5 @@
 {
-  "name": "cdk-s3-bucketreplication",
+  "name": "@rogerchi/cdk-s3-bucketreplication",
   "repository": {
     "type": "git",
     "url": "https://github.com/rogerchi/cdk-s3-bucketreplication.git"
@@ -113,7 +113,7 @@
     "outdir": "dist",
     "targets": {
       "python": {
-        "distName": "cdk-s3-bucketreplication",
+        "distName": "@rogerchi/cdk-s3-bucketreplication",
         "module": "cdk_s3_bucketreplication"
       }
     },

@@ -1,6 +1,6 @@
 const { AwsCdkConstructLibrary, ProjectType } = require('projen');
 
-const PROJECT_NAME = 'cdk-s3-bucketreplication';
+const PROJECT_NAME = '@rogerchi/cdk-s3-bucketreplication';
 
 const project = new AwsCdkConstructLibrary({
   author: 'Roger Chi',
