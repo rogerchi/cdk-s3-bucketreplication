@@ -1,13 +1,23 @@
-const { AwsCdkConstructLibrary } = require('projen');
+const { AwsCdkConstructLibrary, ProjectType } = require('projen');
+
+const PROJECT_NAME = 'cdk-s3-bucketreplication';
 
 const project = new AwsCdkConstructLibrary({
   author: 'Roger Chi',
-  authorAddress: 'user@domain.com',
-  cdkVersion: '1.73.0',
+  authorAddress: 'roger@rogerchi.com',
+  cdkVersion: '1.92.0',
   defaultReleaseBranch: 'main',
-  jsiiFqn: "projen.AwsCdkConstructLibrary",
-  name: 'cdk-s3-bucketreplication',
-  repositoryUrl: 'https://github.com/user/cdk-s3-bucketreplication.git',
+  jsiiFqn: 'projen.AwsCdkConstructLibrary',
+  name: PROJECT_NAME,
+  repositoryUrl: 'https://github.com/rogerchi/cdk-s3-bucketreplication.git',
+  cdkDependencies: ['@aws-cdk/core', '@aws-cdk/aws-iam', '@aws-cdk/aws-s3'],
+  publishToPypi: {
+    distName: PROJECT_NAME,
+    module: 'cdk_s3_bucketreplication',
+  },
+  projectType: ProjectType.LIB,
+  cdkAssert: true,
+  mergify: false,
 
   /* AwsCdkConstructLibraryOptions */
   // cdkAssert: true,                                                          /* Install the @aws-cdk/assert library? */
@@ -110,6 +120,13 @@ const project = new AwsCdkConstructLibrary({
   // parent: undefined,                                                        /* The parent project, if this project is part of a bigger project. */
   // projectType: ProjectType.UNKNOWN,                                         /* Which type of project this is (library/app). */
   // readme: undefined,                                                        /* The README setup. */
+});
+
+project.eslint.addOverride({
+  files: ['*.ts', '*.tsx'],
+  rules: {
+    '@typescript-eslint/indent': 'off',
+  },
 });
 
 project.synth();

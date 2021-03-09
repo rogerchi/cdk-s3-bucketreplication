@@ -225,6 +225,15 @@
         "@typescript-eslint/no-require-imports": "off",
         "import/no-extraneous-dependencies": "off"
       }
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {
+        "@typescript-eslint/indent": "off"
+      }
     }
   ]
 }

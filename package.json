@@ -2,7 +2,7 @@
   "name": "cdk-s3-bucketreplication",
   "repository": {
     "type": "git",
-    "url": "https://github.com/user/cdk-s3-bucketreplication.git"
+    "url": "https://github.com/rogerchi/cdk-s3-bucketreplication.git"
   },
   "scripts": {
     "projen": "npx projen",
@@ -25,11 +25,11 @@
   },
   "author": {
     "name": "Roger Chi",
-    "email": "user@domain.com",
+    "email": "roger@rogerchi.com",
     "organization": false
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.73.0",
+    "@aws-cdk/assert": "^1.92.0",
     "@types/jest": "^26.0.20",
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
@@ -51,7 +51,15 @@
     "typescript": "^4.2.3"
   },
   "peerDependencies": {
+    "@aws-cdk/aws-iam": "^1.92.0",
+    "@aws-cdk/aws-s3": "^1.92.0",
+    "@aws-cdk/core": "^1.92.0",
     "constructs": "^3.2.27"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-iam": "^1.92.0",
+    "@aws-cdk/aws-s3": "^1.92.0",
+    "@aws-cdk/core": "^1.92.0"
   },
   "bundledDependencies": [],
   "keywords": [
@@ -59,7 +67,7 @@
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "jest": {
     "testMatch": [
       "**/__tests__/**/*.ts?(x)",
@@ -103,7 +111,12 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "python": {
+        "distName": "cdk-s3-bucketreplication",
+        "module": "cdk_s3_bucketreplication"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
