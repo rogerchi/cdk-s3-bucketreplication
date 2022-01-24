@@ -49,8 +49,8 @@ export interface ReplicationDestinationPropertyNoBucket {
 }
 
 export interface BucketReplicationProps {
-  readonly sourceBucket: s3.Bucket;
-  readonly destinationBucket: s3.Bucket;
+  readonly sourceBucket: s3.IBucket;
+  readonly destinationBucket: s3.IBucket;
   readonly replicationRuleProperties?: ReplicationRulePropertyNoDestination;
   readonly replicationDestinationProperties?: ReplicationDestinationPropertyNoBucket;
 }
