@@ -1,11 +1,11 @@
-const { AwsCdkConstructLibrary, ProjectType } = require('projen');
+const { awscdk, ProjectType } = require('projen');
 
 const PROJECT_NAME = 'cdk-s3-bucketreplication';
 
-const project = new AwsCdkConstructLibrary({
+const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Roger Chi',
   authorAddress: 'roger@rogerchi.com',
-  cdkVersion: '1.92.0',
+  cdkVersion: '1.147.0',
   defaultReleaseBranch: 'main',
   jsiiFqn: 'projen.AwsCdkConstructLibrary',
   name: PROJECT_NAME,
@@ -18,7 +18,6 @@ const project = new AwsCdkConstructLibrary({
   projectType: ProjectType.LIB,
   cdkAssert: true,
   mergify: false,
-  releaseBranches: ['main'],
   releaseToNpm: true,
   releaseWorkflow: true,
   packageName: PROJECT_NAME,
