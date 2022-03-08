@@ -22,10 +22,11 @@ const project = new AwsCdkConstructLibrary({
   releaseToNpm: true,
   releaseWorkflow: true,
   packageName: PROJECT_NAME,
+  maxNodeVersion: '14.17.0',
 
   /* AwsCdkConstructLibraryOptions */
   // cdkAssert: true,                                                          /* Install the @aws-cdk/assert library? */
-  // cdkDependencies: undefined,                                               /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
+  // cdkDependencies: undefined,                                               /* Which AWS CDK modules (those that start with '@aws-cdk/') does this library require when consumed? */
   // cdkDependenciesAsDeps: true,                                              /* If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). */
   // cdkTestDependencies: undefined,                                           /* AWS CDK modules required for testing. */
   // cdkVersionPinning: false,                                                 /* Use pinned version instead of caret version for CDK. */
@@ -71,7 +72,7 @@ const project = new AwsCdkConstructLibrary({
   // npmRegistryUrl: 'https://registry.npmjs.org',                             /* The base URL of the npm package registry. */
   // npmTaskExecution: NpmTaskExecution.PROJEN,                                /* Determines how tasks are executed when invoked as npm scripts (yarn/npm run xyz). */
   // packageManager: NodePackageManager.YARN,                                  /* The Node Package Manager used to execute scripts. */
-  // packageName: undefined,                                                   /* The "name" in package.json. */
+  // packageName: undefined,                                                   /* The 'name' in package.json. */
   // peerDependencyOptions: undefined,                                         /* Options for `peerDeps`. */
   // peerDeps: [],                                                             /* Peer dependencies for this module. */
   // projenCommand: 'npx projen',                                              /* The shell command to use in order to run the projen CLI. */
@@ -99,7 +100,7 @@ const project = new AwsCdkConstructLibrary({
   // mergifyOptions: undefined,                                                /* Options for mergify. */
   // npmignore: undefined,                                                     /* Additional entries to .npmignore. */
   // npmignoreEnabled: true,                                                   /* Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. */
-  // projenDevDependency: true,                                                /* Indicates of "projen" should be installed as a devDependency. */
+  // projenDevDependency: true,                                                /* Indicates of 'projen' should be installed as a devDependency. */
   // projenUpgradeAutoMerge: undefined,                                        /* Automatically merge projen upgrade PRs when build passes. */
   // projenUpgradeSchedule: [ '0 6 * * *' ],                                   /* Customize the projenUpgrade schedule in cron expression. */
   // projenUpgradeSecret: undefined,                                           /* Periodically submits a pull request for projen upgrades (executes `yarn projen:upgrade`). */
@@ -110,7 +111,7 @@ const project = new AwsCdkConstructLibrary({
   // releaseEveryCommit: true,                                                 /* Automatically release new versions every commit to one of branches in `releaseBranches`. */
   // releaseSchedule: undefined,                                               /* CRON schedule to trigger new releases. */
   // releaseToNpm: false,                                                      /* Automatically release to npm when new versions are introduced. */
-  // releaseWorkflow: undefined,                                               /* Define a GitHub workflow for releasing from "main" when new versions are bumped. */
+  // releaseWorkflow: undefined,                                               /* Define a GitHub workflow for releasing from 'main' when new versions are bumped. */
   // workflowBootstrapSteps: 'yarn install --frozen-lockfile && yarn projen',  /* Workflow steps to use in order to bootstrap this repo. */
   // workflowContainerImage: undefined,                                        /* Container image to use for GitHub workflows. */
   // workflowNodeVersion: undefined,                                           /* The node version to use in GitHub workflows. */
