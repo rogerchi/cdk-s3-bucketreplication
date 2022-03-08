@@ -44,8 +44,8 @@ new BucketReplication(scope: Construct, id: string, props: BucketReplicationProp
 * **scope** (<code>[Construct](#aws-cdk-core-construct)</code>)  *No description*
 * **id** (<code>string</code>)  *No description*
 * **props** (<code>[BucketReplicationProps](#cdk-s3-bucketreplication-bucketreplicationprops)</code>)  *No description*
-  * **destinationBucket** (<code>[Bucket](#aws-cdk-aws-s3-bucket)</code>)  *No description* 
-  * **sourceBucket** (<code>[Bucket](#aws-cdk-aws-s3-bucket)</code>)  *No description* 
+  * **destinationBucket** (<code>[IBucket](#aws-cdk-aws-s3-ibucket)</code>)  *No description* 
+  * **sourceBucket** (<code>[IBucket](#aws-cdk-aws-s3-ibucket)</code>)  *No description* 
   * **replicationDestinationProperties** (<code>[ReplicationDestinationPropertyNoBucket](#cdk-s3-bucketreplication-replicationdestinationpropertynobucket)</code>)  *No description* __*Optional*__
   * **replicationRuleProperties** (<code>[ReplicationRulePropertyNoDestination](#cdk-s3-bucketreplication-replicationrulepropertynodestination)</code>)  *No description* __*Optional*__
 
@@ -61,8 +61,8 @@ new BucketReplication(scope: Construct, id: string, props: BucketReplicationProp
 
 Name | Type | Description 
 -----|------|-------------
-**destinationBucket** | <code>[Bucket](#aws-cdk-aws-s3-bucket)</code> | <span></span>
-**sourceBucket** | <code>[Bucket](#aws-cdk-aws-s3-bucket)</code> | <span></span>
+**destinationBucket** | <code>[IBucket](#aws-cdk-aws-s3-ibucket)</code> | <span></span>
+**sourceBucket** | <code>[IBucket](#aws-cdk-aws-s3-ibucket)</code> | <span></span>
 **replicationDestinationProperties**? | <code>[ReplicationDestinationPropertyNoBucket](#cdk-s3-bucketreplication-replicationdestinationpropertynobucket)</code> | __*Optional*__
 **replicationRuleProperties**? | <code>[ReplicationRulePropertyNoDestination](#cdk-s3-bucketreplication-replicationrulepropertynodestination)</code> | __*Optional*__
 
