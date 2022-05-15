@@ -1,4 +1,4 @@
-const { awscdk, ProjectType } = require('projen');
+const { awscdk } = require('projen');
 
 const PROJECT_NAME = 'cdk-s3-bucketreplication';
 
@@ -11,11 +11,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: PROJECT_NAME,
   repositoryUrl: 'https://github.com/rogerchi/cdk-s3-bucketreplication.git',
   cdkDependencies: ['@aws-cdk/core', '@aws-cdk/aws-iam', '@aws-cdk/aws-s3'],
+  peerDeps: ['@aws-cdk/aws-iam', '@aws-cdk/aws-s3'],
   publishToPypi: {
     distName: PROJECT_NAME,
     module: 'cdk_s3_bucketreplication',
   },
-  projectType: ProjectType.LIB,
   cdkAssert: true,
   mergify: false,
   releaseToNpm: true,
