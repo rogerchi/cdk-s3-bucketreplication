@@ -21,7 +21,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   releaseToNpm: true,
   releaseWorkflow: true,
   packageName: PROJECT_NAME,
-  maxNodeVersion: '14.17.0',
+  // maxNodeVersion: '14.17.0',
 
   /* AwsCdkConstructLibraryOptions */
   // cdkAssert: true,                                                          /* Install the @aws-cdk/assert library? */
@@ -131,6 +131,11 @@ project.eslint.addOverride({
   rules: {
     '@typescript-eslint/indent': 'off',
   },
+});
+
+// Fix for prettier types breaking
+project.package.addField('resolutions', {
+  '@types/prettier': '2.6.0',
 });
 
 project.synth();
